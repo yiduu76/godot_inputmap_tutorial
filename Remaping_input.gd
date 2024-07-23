@@ -1,8 +1,8 @@
 #使用方式:在 remapable_inputs 添加你想要使其能自定义绑定的action名称即可
 extends Control
 @onready var remapable_btns_container: VBoxContainer = $RemapableBtnsContainer
-@export var remapable_inputs :Array[String]
-var save_path = "user://my_remap.tres"
+@export var remapable_inputs :Array[String] = ["ui_up","ui_left","ui_down","ui_right"]
+var save_path = "user://my_remap.cfg"
 var defult_map_cfg_path = "user://my_defult_remap.cfg"
 var remapping_action = ""
 var remapping = false
